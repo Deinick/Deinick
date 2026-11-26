@@ -18,17 +18,6 @@
 
 ---
 
-### 🪐 Current Mission
-
-```text
-> Pilot ......... Deinick
-> Rank .......... Cadet → Starpilot (in progress)
-> Home system ... Vancouver, edge of the Pacific
-> Now building .. <your current project here>
-> Learning ...... <what you're studying>
-> Side .......... light side by day, dark side during merge conflicts
-```
-
 ### ⚔️ Arsenal (Tech Stack)
 
 <!-- To change the blades: edit STACK in scripts/make_assets.py, then run
@@ -37,21 +26,6 @@
   <img src="./assets/energy-blades.svg" alt="Tech stack shown as glowing energy blades, blade length = proficiency" width="100%"/>
 </p>
 
-### 📊 Holo-Terminal
-
-<!-- Regenerated every 12 hours by .github/workflows/space-battle.yml from live GitHub data -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Deinick/Deinick/output/holo-stats.svg" alt="Hologram stats card: contributions, streaks, monthly activity chart and top languages" width="100%"/>
-</p>
-
-### 🛸 My Fleet
-
-<!-- Pin your best repos on your profile too. Swap these for your own projects. -->
-| Ship | Mission |
-|------|---------|
-| [`hyperdrive-cli`](https://github.com/Deinick) | Jump between projects at lightspeed |
-| [`holocron-notes`](https://github.com/Deinick) | My archive of everything I learn |
-| [`robo-helper`](https://github.com/Deinick) | A helper bot that beeps back |
 
 ### 🌌 Space Battle (Contribution Graph)
 
