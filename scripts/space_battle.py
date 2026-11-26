@@ -18,10 +18,23 @@ import random
 import sys
 import urllib.request
 
+import pixel
+
 CELL, GAP = 11, 3
 PAD_X, PAD_TOP, PAD_BOTTOM = 16, 34, 14
 DURATION = 14.0          # seconds per loop
 SWEEP = 0.62             # fraction of the loop the ship spends crossing
+
+# original pixel starfighter, nose pointing right (r fins, w hull, c cockpit, f engine)
+FIGHTER = [
+    "..rr........",
+    "..www.......",
+    ".wwwwww.....",
+    "fwwwwwwwwcc.",
+    ".wwwwww.....",
+    "..www.......",
+    "..rr........",
+]
 
 LEVELS = ["NONE", "FIRST_QUARTILE", "SECOND_QUARTILE", "THIRD_QUARTILE", "FOURTH_QUARTILE"]
 
@@ -119,13 +132,12 @@ def render(weeks, theme):
                 out.append(f'<rect class="c" style="animation-delay:{delay:.3f}s" x="{x}" y="{y}" '
                            f'width="{CELL}" height="{CELL}" rx="2" fill="{t["cells"][lvl]}"/>')
 
-    # the starfighter (an original, simple arrowhead design) + its laser beam
+    # the starfighter: an original pixel-art sprite + its laser beam
     sy = PAD_TOP - 18
     out.append('<g class="ship">')
     out.append(f'<rect class="beam" x="-1" y="{sy + 8}" width="2" height="{grid_h + 12}" fill="{t["laser"]}"/>')
-    out.append(f'<path d="M -12 {sy - 5} L 12 {sy} L -12 {sy + 5} L -7 {sy} Z" fill="{t["ship"]}"/>')
-    out.append(f'<path d="M -12 {sy - 5} L -4 {sy - 9} L 0 {sy - 2} Z M -12 {sy + 5} L -4 {sy + 9} L 0 {sy + 2} Z" fill="{t["accent"]}"/>')
-    out.append(f'<circle cx="-13" cy="{sy}" r="2" fill="{t["laser"]}" opacity=".8"/>')
+    pal = {"r": t["accent"], "w": t["ship"], "c": "#4BD5EE", "f": "#FFB000"}
+    out.append(pixel.sprite(FIGHTER, pal, -14, sy - 7, 2, 'shape-rendering="crispEdges"'))
     out.append("</g></svg>")
     return "\n".join(out)
 

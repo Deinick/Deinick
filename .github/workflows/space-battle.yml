@@ -1,4 +1,4 @@
-# Turns Deinick's contribution graph into a space battle.
+# Turns Deinick's contribution graph into a space battle and draws the holo-terminal stats card.
 # Uses only: actions/checkout (MIT, by GitHub) + this repo's own script (MIT).
 name: Generate space battle
 
@@ -19,8 +19,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Draw the space battle SVGs
-        run: python3 scripts/space_battle.py
+      - name: Draw the space battle + holo-terminal SVGs
+        run: |
+          python3 scripts/space_battle.py
+          python3 scripts/holo_stats.py
         env:
           GH_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

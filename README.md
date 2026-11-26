@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="./assets/pixel-duel.svg" alt="Pixel-art banner: two hooded duelists cross energy blades under a ringed planet while a little helper bot hovers nearby" width="100%"/>
+</p>
+
+<p align="center">
   <img src="./assets/crawl.svg" alt="In a distant corner of the open-source galaxy... DEINICK — Chapter I: The First Commit" width="100%"/>
 </p>
 
@@ -27,27 +31,17 @@
 
 ### ⚔️ Arsenal (Tech Stack)
 
-<!-- Edit these to match your real stack. Badge format:
-     https://img.shields.io/badge/<NAME>-000814?style=for-the-badge&logo=<simpleicons-slug>&logoColor=<HEX> -->
-<p>
-  <img src="https://img.shields.io/badge/JavaScript-000814?style=for-the-badge&logo=javascript&logoColor=FFE81F"/>
-  <img src="https://img.shields.io/badge/TypeScript-000814?style=for-the-badge&logo=typescript&logoColor=2E9BFF"/>
-  <img src="https://img.shields.io/badge/Python-000814?style=for-the-badge&logo=python&logoColor=3DFF6E"/>
-  <img src="https://img.shields.io/badge/React-000814?style=for-the-badge&logo=react&logoColor=4BD5EE"/>
-  <img src="https://img.shields.io/badge/Node.js-000814?style=for-the-badge&logo=nodedotjs&logoColor=3DFF6E"/>
-  <img src="https://img.shields.io/badge/Git-000814?style=for-the-badge&logo=git&logoColor=FF2A2A"/>
-  <img src="https://img.shields.io/badge/Docker-000814?style=for-the-badge&logo=docker&logoColor=2E9BFF"/>
+<!-- To change the blades: edit STACK in scripts/make_assets.py, then run
+     python3 scripts/make_assets.py and commit assets/energy-blades.svg -->
+<p align="center">
+  <img src="./assets/energy-blades.svg" alt="Tech stack shown as glowing energy blades, blade length = proficiency" width="100%"/>
 </p>
 
-### 📊 Fleet Command Record
+### 📊 Holo-Terminal
 
+<!-- Regenerated every 12 hours by .github/workflows/space-battle.yml from live GitHub data -->
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Deinick&show_icons=true&custom_title=Fleet%20Command%20Record&title_color=FFE81F&text_color=C9D1D9&icon_color=2E9BFF&ring_color=FF2A2A&bg_color=135,000814,0B1D3A&border_color=2E9BFF&border_radius=10" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deinick&layout=compact&custom_title=Power%20Crystals%20(Top%20Languages)&title_color=FFE81F&text_color=C9D1D9&bg_color=135,000814,0B1D3A&border_color=2E9BFF&border_radius=10" alt="Top languages"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Deinick&background=135,000814,0B1D3A&border=2E9BFF&stroke=2E9BFF&ring=FF2A2A&fire=FF2A2A&currStreakNum=FFE81F&sideNums=FFE81F&currStreakLabel=FF2A2A&sideLabels=7FB2FF&dates=8B949E&border_radius=10" alt="Contribution streak"/>
+  <img src="https://raw.githubusercontent.com/Deinick/Deinick/output/holo-stats.svg" alt="Hologram stats card: contributions, streaks, monthly activity chart and top languages" width="100%"/>
 </p>
 
 ### 🛸 My Fleet
